@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoVal</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="navbar">
+            <h1>CryptoVal</h1>
+            <p>Check live Cryptocurrency Value</p>
+    </div>
+
+    <div class="coin">
+        <form action="/" method="post">
+            <label for="coin" class="label">Select a Crypto Coin</label>
+            <select name="coin" id="coin">
+                <option value="BTC-USD">Bitcoin</option>
+                <option value="ETH-USD">Etherium</option>
+                <option value="USDT-USD">USDT</option>
+                <option value="SOL-USD">Solana</option>
+            </select>
+             <button class="button" type="submit">Check</button>
+        </form>
+    </div>
+
+    <div class="bit-value">
+
+        <div class="content price">
+          <h2>Crypto Price <span> >>></span></h2>
+           <h2>$ <%=  data.price_24h %> </h2>
+        </div>
+
+        <div class="content volume">
+            <h2>Crypto Volume <span> >>></span></h2>
+            <h2><%= data.volume_24h %></h2>
+        </div>
+
+        <div class="content last_price">
+            <h2>Last Trade Price <span> >>></span></h2>
+            <h2>$ <%= data.last_trade_price %></h2>
+        </div>
+
+    </div>
+
+    <h3 class="fetch-dt">Crypto data are fetched from Blockchain.com Exchange </h3>
+   
+
+    <footer>
+       <p> © Ahmed Noushad , 2023 </p>
+    </footer>
+
+    
+    
+</body>
+</html>
+  

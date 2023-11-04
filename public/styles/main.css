@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #21232f;;
+}
+.navbar {
+    position: relative;
+    background-color: #3d4863;
+    height: 90px;
+    text-align: center;
+
+    
+}
+.navbar h1 {
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-weight: 600;
+    padding-top: 15px;
+}
+.navbar p {
+    color: orange;
+    margin-top: 8px;
+}
+
+.bit-value {
+    background-color: #3d4863;
+    margin-top: 120px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 8px;
+}
+
+.content {
+    margin-left: 20%;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+span {
+    color: orange;
+}
+.content > h2 {
+    color: aliceblue;
+}
+
+.content > :nth-child(2) {
+    color: rgb(86, 253, 86);
+}
+.fetch-dt {
+    color:  rgb(86, 253, 86);
+    margin-left: 20%;
+    margin-top: 18px;
+    position: relative;
+}
+
+.coin {
+    position: absolute;
+    margin-left: 20%;
+    top: 130px;
+}
+
+.label {
+    color: whitesmoke;
+    font-size: 15px;
+}
+.button {
+    margin-left: 5px;
+   
+}
+
+footer p {
+    color: orange;
+    font-size: 16px;
+}
+
+footer {
+    position: absolute;
+    bottom: 5%;
+    left:45%;
+}
+
+
+
+@media (max-width : 600px) {
+    footer {
+        left : 30%
+    }
+
+    .content > h2 {
+        font-size: 13px;
+    }
+    .content > :nth-child(2) {
+        font-size: 13px;
+        text-align: right;
+    }
+    .content {
+        gap: 5px;
+        margin-left: 0;
+    }
+
+}
